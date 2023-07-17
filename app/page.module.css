@@ -1,0 +1,83 @@
+.main {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /* padding: 6rem; */
+  min-height: 100vh;
+}
+
+.main-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: row;
+  /* background-image: url(../assets/images/hero_main.jpg); */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+}
+
+.main-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  object-fit: cover;
+}
+
+.main-section-wrapper {
+  margin: 0 5rem 4.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.main-text {
+  color: white;
+  font-size: clamp(2.25rem, 5vw, 6.5rem);
+  justify-self: end;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .main-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .main-section-wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .main-text{
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 7rem);
+    margin-bottom: 0.75rem;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
